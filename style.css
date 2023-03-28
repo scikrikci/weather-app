@@ -1,0 +1,123 @@
+body {
+    background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.box {
+    width: 400px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    gap: 1rem;
+
+    position: relative;
+    transition: max-height 0.25s ease-in;
+}
+
+.none-text {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: 700;
+    color: red;
+    /* color: #333; */
+    text-align: center;
+
+    display: none;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#text {
+    width: 80%;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+    text-transform: capitalize;
+}
+#text-button {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+    outline: none;
+    text-transform: capitalize;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: 50%;
+}
+#text-button:hover {
+    transition: .5s;
+    background-color: #333;
+}
+
+.weather-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    display: none;
+    transition: .5s;
+}
+.weather-box .img-wrapper {
+    width: 100%;
+    text-align: center;
+}
+.weather-box .img-wrapper img {
+    width: 150px;
+    height: 150px;
+}
+
+.weather-box .temperature {
+    margin: 1rem 0 0 0;
+    font-size: 50px;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+}
+
+.weather-box .description {
+    margin: 1rem 0 0 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    text-transform: capitalize;
+    
+}
